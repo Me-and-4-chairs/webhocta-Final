@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Học Tiếng Anh</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="containerone">
+                <img src="img/logoone.png" width="150" height="82">
+                <h1>CTA ENGLISH</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li></li>
+                    <li><a href="#" id="home-btn">Trang Chủ</a></li>
+                    <li><a href="khoaHoc.html" id="courses-btn">Khóa Học</a></li>
+                    <li><a href="#contact" id="contact-btn">Liên Hệ</a></li>
+                    <li class="user-icon">
+                        <span class="icon" id="user-icon">🔑</span> <!-- Icon đăng nhập -->
+                        <div class="dropdown">
+                            <a href="#" id="SI-btn">Đăng Nhập</a>
+                            <a href="#" id="SU-btn">Đăng Ký</a>
+                            <a href="#" id="logout-btn" style="display: none;">Đăng Xuất</a> <!-- Nút đăng xuất -->
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="carousel-images">
+                <img src="img/t1.png" alt="Hình 1">
+                <img src="img/t2.png" alt="Hình 2">
+                <img src="img/t3.png" alt="Hình 3">
+                <img src="img/t4.png" alt="Hình 4">
+            </div>
+            <button class="prev" onclick="showPreviousImage()">&#10094;</button>
+            <button class="next" onclick="showNextImage()">&#10095;</button>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <img src="img/t2.png" alt="Hình 1">
+        </section>
+
+        <section class="join-community">
+            <h2>HÃY THAM GIA CÙNG CHÚNG TÔI VÀ TRỞ THÀNH MỘT PHẦN CỦA CỘNG ĐỒNG HỌC TIẾNG ANH</h2>
+            <div class="community-icons">
+                <div class="icon-item">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="kiemtra">
+            <div class="kiemtra-content">
+                <img src="img/testp.png" alt="Mô tả hình ảnh" class="kiemtra-image">
+                <a class="kiemtra-button" id="lv-button" href="testLevel.html" target="_blank">Làm bài kiểm tra ngay</a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <!-- <h3>Học Tiếng Anh Online</h3> -->
+                <img src="img/logocta.jpg" alt="Thông tin" class="footer-image">
+            </div>
+            <div class="footer-address">
+                <h3>Thông Tin Liên Hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Thành phố XYZ</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> contact@example.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Mạng Xã Hội</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size:14px">&copy; Copyright © CTA ENGLISH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="myjs.js"></script>
+</body>
+</html>

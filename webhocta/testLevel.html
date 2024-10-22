@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Proficiency Test</title>
+    <link rel="stylesheet" href="testLevelcss.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="test-box" id="test-box">
+            <h1>English Level Test</h1>
+
+            <!-- Question 1 -->
+            <div class="question" data-question-id="1">
+                <div class="question-text">
+                    <h3>1. Can I park here?</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">Sorry, I did that.</button>
+                    <button class="option-button">It's the same place.</button>
+                    <button class="option-button">Only for half an hour.</button>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question" data-question-id="2">
+                <div class="question-text">
+                    <h3>2. What colour will you paint the children's bedroom?</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">I hope it was right.</button>
+                    <button class="option-button">We can't decide.</button>
+                    <button class="option-button">It wasn’t very difficult.</button>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question" data-question-id="3">
+                <div class="question-text">
+                    <h3>3. I can't understand this email.</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">Would you like some help?</button>
+                    <button class="option-button">Don't you know?</button>
+                    <button class="option-button">I suppose you can.</button>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question" data-question-id="4">
+                <div class="question-text">
+                    <h3>4. I'd like two tickets for tomorrow night.</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">How much did you pay?</button>
+                    <button class="option-button">Afternoon and evening.</button>
+                    <button class="option-button">I'll just check for you.</button>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question" data-question-id="5">
+                <div class="question-text">
+                    <h3>5. Shall we go to the gym now?</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">I'm too tired.</button>
+                    <button class="option-button">It's very good.</button>
+                    <button class="option-button">Not at all.</button>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question" data-question-id="6">
+                <div class="question-text">
+                    <h3>6. His eyes were ...... bad that he couldn't read the number plate of the car in front.</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">such</button>
+                    <button class="option-button">too</button>
+                    <button class="option-button">so</button>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question" data-question-id="7">
+                <div class="question-text">
+                    <h3>7. The company needs to decide ...... and for all what its position is on this point.</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">here</button>
+                    <button class="option-button">once</button>
+                    <button class="option-button">first</button>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question" data-question-id="8">
+                <div class="question-text">
+                    <h3>8. Don't put your cup on the ...... of the table – someone will knock it off.</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">outside</button>
+                    <button class="option-button">edge</button>
+                    <button class="option-button">border</button>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question" data-question-id="9">
+                <div class="question-text">
+                    <h3>9. I'm sorry - I didn't ...... to disturb you.</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">hope</button>
+                    <button class="option-button">mean</button>
+                    <button class="option-button">think</button>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question" data-question-id="10">
+                <div class="question-text">
+                    <h3>10. The singer ended the concert ...... her most popular song.</h3>
+                </div>
+                <div class="options">
+                    <button class="option-button">by</button>
+                    <button class="option-button">with</button>
+                    <button class="option-button">in</button>
+                </div>
+            </div>
+
+            <button onclick="submitTest()">Submit</button>
+        </div>
+
+        <div class="result-box hidden" id="result-box">
+
+            <div class="result-header">
+                <button class="replay-button" onclick="replayTest()">< Back</button>
+            </div>
+
+            <h2>Your Results</h2>
+            <div class="results-grid" id="results">
+                <!-- -->
+            </div>
+            <div class="result-buttons">
+
+                <p>We recommend you continue improving your skills. Why not sign up for more resources?</p>
+                <button onclick="goToSignUp()">Go to Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <script src="testLeveljs.js"></script>
+</body>
+</html>
