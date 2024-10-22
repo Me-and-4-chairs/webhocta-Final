@@ -3,6 +3,12 @@
     const registerBtn = document.getElementById("SU-btn");
     const logoutBtn = document.getElementById("logout-btn");
     const userIcon = document.getElementById("user-icon");
+    const navList = document.querySelector('nav ul'); // Lấy danh sách điều hướng
+
+    // Tạo nút Quản Lý
+    const adminBtn = document.createElement('li');
+    adminBtn.innerHTML = '<a href="admin.html" id="admin-btn">Quản Lý</a>';
+    adminBtn.style.display = 'none'; // Ẩn nút Quản Lý mặc định
 
     // Kiểm tra xem người dùng đã đăng nhập chưa
     const loggedInUser = localStorage.getItem('loggedInUser');
@@ -11,24 +17,23 @@
         loginBtn.style.display = 'none'; // Ẩn nút đăng nhập
         registerBtn.style.display = 'none'; // Ẩn nút đăng ký
         logoutBtn.style.display = 'block'; // Hiển thị nút đăng xuất
+
+        // Kiểm tra quyền truy cập
+        if (loggedInUser === "Admin") {
+            adminBtn.style.display = 'inline'; // Hiển thị nút Quản Lý
+            logoutBtn.insertAdjacentElement('afterend', adminBtn); // Thêm nút Quản Lý sau nút Đăng Xuất
+        }
     } else {
         userIcon.textContent = '🔑'; // Hiển thị icon đăng nhập
-        loginBtn.style.display = 'block'; // Hiển thị nút đăng nhập
-        registerBtn.style.display = 'block'; // Hiển thị nút đăng ký
+        loginBtn.style.display = 'block'; // Hiển thị lại nút đăng nhập
+        registerBtn.style.display = 'block'; // Hiển thị lại nút đăng ký
         logoutBtn.style.display = 'none'; // Ẩn nút đăng xuất
     }
 
-    // Chuyển hướng đến trang đăng nhập
+    // Chuyển hướng đến trang đăng nhập khi nhấn nút đăng nhập
     if (loginBtn) {
         loginBtn.onclick = function () {
-            window.location.href = "signin.html";
-        };
-    }
-
-    // Chuyển hướng đến trang đăng ký
-    if (registerBtn) {
-        registerBtn.onclick = function () {
-            window.location.href = "signup.html";
+            window.location.href = "signin.html"; // Chuyển hướng đến trang đăng nhập
         };
     }
 
@@ -41,7 +46,8 @@
             loginBtn.style.display = 'block'; // Hiển thị lại nút đăng nhập
             registerBtn.style.display = 'block'; // Hiển thị lại nút đăng ký
             logoutBtn.style.display = 'none'; // Ẩn nút đăng xuất
-            window.location.href = 'index.html'; // Có thể chuyển hướng về trang chính
+            adminBtn.style.display = 'none'; // Ẩn nút Quản Lý
+            window.location.href = 'index.html'; // Chuyển hướng về trang chính
         };
     }
 

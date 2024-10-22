@@ -11,6 +11,10 @@
                 localStorage.setItem('loggedInUser', username);
                 alert('Đăng nhập thành công!');
                 window.location.href = 'index.html'; // Chuyển hướng đến trang chính
+            } else if (response === 'admin') {
+                localStorage.setItem('loggedInUser', username);
+                alert('Đăng nhập thành công với quyền quản trị!');
+                window.location.href = 'index.html'; // Chuyển hướng đến trang chính
             } else {
                 alert('Tài khoản hoặc mật khẩu không đúng!');
             }
@@ -19,6 +23,7 @@
         });
     });
 });
+
 
 $(function () {
     $('#signup-form').on('submit', function (event) {

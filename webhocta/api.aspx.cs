@@ -34,7 +34,15 @@ namespace webhocta
             if (CheckLogin(username, password))
             {
                 Session["LoggedInUser"] = username;
-                Response.Write("success");
+                // Kiểm tra xem người dùng có phải là quản trị viên không
+                if (username == "Admin")
+                {
+                    Response.Write("admin");
+                }
+                else
+                {
+                    Response.Write("success");
+                }
             }
             else
             {
@@ -42,6 +50,7 @@ namespace webhocta
             }
             Response.End();
         }
+
 
         private bool CheckLogin(string username, string password)
         {

@@ -116,6 +116,14 @@ header.scrolled .dropdown a {
     color: #333; /* Giữ nguyên màu chữ trong dropdown khi cuộn */
 }
 
+.dropdown-menu {
+    display: none; /* Ẩn menu dropdown mặc định */
+    position: absolute; /* Để hiển thị menu bên dưới icon */
+    background-color: white; /* Màu nền cho menu */
+    border: 1px solid #ccc; /* Đường viền cho menu */
+    z-index: 1000; /* Đảm bảo menu nằm trên các phần tử khác */
+}
+
 
 .carousel {
     position: relative;

@@ -72,6 +72,7 @@
   <ItemGroup>
     <Content Include="api.aspx" />
     <Content Include="img\dotnet-runtime-8.0.10-win-x64.exe" />
+    <Content Include="img\logocta.jpg" />
     <Content Include="img\logoone.png" />
     <Content Include="img\logopng.png" />
     <Content Include="img\t1.jpg" />
