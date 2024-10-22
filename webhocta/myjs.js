@@ -7,7 +7,7 @@
 
     // Tạo nút Quản Lý
     const adminBtn = document.createElement('li');
-    adminBtn.innerHTML = '<a href="admin.html" id="admin-btn">Quản Lý</a>';
+    adminBtn.innerHTML = '<a href="QuanLy.html" id="admin-btn">Quản Lý</a>';
     adminBtn.style.display = 'none'; // Ẩn nút Quản Lý mặc định
 
     // Kiểm tra xem người dùng đã đăng nhập chưa
@@ -130,4 +130,38 @@
             header.classList.remove('scrolled');
         }
     };
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Dữ liệu người dùng (mã hóa mật khẩu)
+    const users = [
+        { username: 'admin', password: 'hashedAdminPassword', role: 'Admin' },
+        { username: 'user1', password: 'hashedUserPassword1', role: 'Member' },
+        { username: 'user2', password: 'hashedUserPassword2', role: 'Member' },
+        // Thêm người dùng khác tại đây
+    ];
+
+    // Hàm hiển thị người dùng
+    function displayUsers() {
+        const tableBody = document.getElementById('user-table-body');
+        users.forEach(user => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${user.username}</td>
+                <td>${user.password}</td> <!-- Chỉ hiển thị mật khẩu đã mã hóa -->
+                <td>${user.role}</td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+
+    // Kiểm tra quyền truy cập của quản trị viên
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    if (loggedInUser === 'Admin') {
+        displayUsers(); // Hiển thị bảng nếu là admin
+    } else {
+        alert('Bạn không có quyền truy cập vào trang này.');
+        window.location.href = 'index.html'; // Chuyển hướng về trang chính
+    }
 });

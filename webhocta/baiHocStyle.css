@@ -1,0 +1,328 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Thêm hiệu ứng cuộn mượt */
+}
+
+/* Sidebar */
+#sidebar {
+    width: 15%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    top: 70px; /* Đẩy xuống để không trùng với thanh Nav */
+}
+
+    #sidebar a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #ddd;
+        text-decoration: none;
+        color: #333;
+        border-radius: 5px;
+    }
+
+        #sidebar a:hover {
+            background-color: #ccc;
+        }
+/* Sidebar bên phải */
+#right-sidebar {
+    width: 15%; /* Độ rộng của sidebar */
+    background-color: #f4f4f4; /* Màu nền */
+    padding: 20px; /* Khoảng cách bên trong */
+    position: fixed; /* Định vị sidebar cố định */
+    height: 100%; /* Chiều cao đầy đủ */
+    top: 70px; /* Đẩy xuống để không bị che bởi thanh Nav */
+    right: 0; /* Đặt sidebar ở bên phải */
+    overflow-y: auto; /* Thêm cuộn nếu nội dung dài */
+}
+
+    #right-sidebar a {
+        display: block; /* Hiển thị dưới dạng block */
+        padding: 10px; /* Khoảng cách bên trong */
+        margin-bottom: 10px; /* Khoảng cách dưới mỗi link */
+        background-color: #ddd; /* Màu nền cho link */
+        text-decoration: none; /* Không gạch chân */
+        color: #333; /* Màu chữ */
+        border-radius: 5px; /* Bo tròn góc */
+    }
+
+        #right-sidebar a:hover {
+            background-color: #ccc; /* Màu nền khi hover */
+        }
+
+/* Main content */
+#main-content {
+    margin-left: 17%;
+    margin-right: 2%; /* Đẩy sang trái để tránh sidebar phải */
+    padding: 20px;
+    width: 65%;
+    margin-top: 70px; /* Đẩy xuống để không trùng với thanh Nav */
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 100px 20px 20px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+img {
+    width: 20%;
+    /*    max-width: 400px;*/
+    height: 20%;
+    margin-top: 0px;
+}
+
+/* Footer */ footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; /* Thêm dòng này nếu cần thiết */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/* Màu chữ trong header */
+header {
+    background: #93C6E7;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky; /* Thêm thuộc tính sticky */
+    top: 0; /* Đặt nó ở trên cùng */
+    z-index: 1000; /* Đảm bảo header luôn nằm trên các phần khác */
+    transition: background 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+    header.scrolled {
+        background: rgba(51, 51, 51, 0.9); /* Thay đổi màu nền khi cuộn */
+    }
+
+/* Container và nav */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    transition: transform 0.3s, color 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+    nav ul li a {
+        color: #fff; /* Màu chữ mặc định */
+        text-decoration: none;
+        transition: color 0.3s, text-shadow 0.3s;
+        font-size: 18px; /* Kích cỡ chữ mặc định */
+    }
+
+/* Đổi màu chữ trong header khi cuộn */
+header.scrolled nav ul li a {
+    color: #FFFFFF; /* Đổi màu chữ khi cuộn */
+}
+
+/* Hover cho nav */
+nav ul li:hover {
+    transform: translateY(-3px); /* Đẩy lên một chút khi hover */
+}
+
+    nav ul li:hover a {
+        font-size: 20px; /* Kích cỡ chữ lớn hơn khi hover */
+    }
+
+/* Dropdown */
+.user-icon {
+    position: relative;
+}
+
+.icon {
+    font-size: 24px; /* Kích thước biểu tượng */
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s; /* Thêm hiệu ứng màu */
+}
+
+    .icon:hover {
+        transform: scale(1.2); /* Phóng to biểu tượng khi hover */
+        color: #e67e22; /* Đổi màu biểu tượng khi hover */
+    }
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #f1f1f1; /* Màu nền dropdown */
+    border: 1px solid #ccc;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.user-icon:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 12px 15px;
+    color: #333; /* Màu chữ mặc định trong dropdown */
+    text-decoration: none;
+    text-align: center;
+}
+
+    /* Màu chữ khi hover trong dropdown */
+    .dropdown a:hover {
+        background: #3498db; /* Màu nền khi hover vào link */
+        color: #fff; /* Màu chữ khi hover */
+    }
+
+/* Giữ nguyên màu chữ trong dropdown khi cuộn */
+header.scrolled .dropdown a {
+    color: #333; /* Giữ nguyên màu chữ trong dropdown khi cuộn */
+}
+
+
+/* Footer */
+footer {
+    background-color: #180161; /* Màu nền */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-address i:hover {
+    color: #FF3B6A; /* Màu hồng khi hover */
+}
+
+header a:hover {
+    color: #091057; /* Màu khi hover ở header */
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-info, .footer-address, .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-image {
+    width: auto; /* Để chiều rộng tự động */
+    height: auto; /* Để chiều cao tự động */
+    max-width: 100%; /* Giới hạn chiều rộng tối đa để không vượt quá container */
+    max-height: 100%; /* Giới hạn chiều cao tối đa */
+}
+
+
+.footer-address p {
+    margin-bottom: 5px;
+    display: flex; /* Để hiển thị icon và văn bản trên cùng một dòng */
+    align-items: center; /* Căn giữa icon và văn bản */
+}
+
+.footer-address i {
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+    color: #FF6A97; /* Màu icon hồng */
+}
+
+.footer-social {
+    text-align: center; /* Căn giữa nội dung */
+}
+
+    .footer-social .social-icons {
+        display: flex;
+        justify-content: center; /* Căn giữa các icon */
+        gap: 15px; /* Khoảng cách giữa các icon */
+    }
+
+    .footer-social a {
+        color: #FF6A97; /* Màu icon hồng */
+        font-size: 24px; /* Kích thước icon */
+        transition: color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu và biến đổi */
+    }
+
+        .footer-social a:hover {
+            color: #FF3B6A; /* Màu khi hover đậm hơn */
+            transform: scale(1.1); /* Phóng to icon khi hover */
+        }
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #FFFFFF; /* Màu chữ trắng */
+}
+
+h3 {
+    color: #232323; /* Màu chữ h3 trắng */
+    font-size: 1.5rem; /* Kích thước chữ h3 lớn hơn */
+}
+
+.h3f {
+    color: white;
+    font-size: 1.5rem;
+}
+
+p, h3, table {
+    clear: both; /* Xóa cả hai bên float */
+    margin-right: 40px; /* Khoảng cách bên phải */
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+/*#sidebar, #right-sidebar, #main-content {
+    outline: 1px solid red;*/ /* Thêm viền để dễ nhìn */
+/*}*/
+.modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Màu nền xanh */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ khi di chuột */
+}
+
+    .modal-content button:hover {
+        background-color: #45a049; /* Màu nền khi hover */
+    }

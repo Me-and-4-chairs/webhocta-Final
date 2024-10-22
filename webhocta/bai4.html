@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngữ Pháp Cơ Bản</title>
+    <link rel="stylesheet" href="baiHocStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="js/jquery-ui.min.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link href="js/jquery-ui.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="containerone">
+                <img src="img/logoone.png" width="150" height="82">
+                <h1>CTA ENGLISH</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li></li>
+                    <li><a href="#" id="home-btn">Trang Chủ</a></li>
+                    <li><a href="khoaHoc.html" id="courses-btn">Khóa Học</a></li>
+                    <li><a href="#contact" id="contact-btn">Liên Hệ</a></li>
+                    <li class="user-icon">
+                        <span class="icon" id="user-icon">🔑</span> <!-- Icon đăng nhập -->
+                        <div class="dropdown">
+                            <a href="#" id="SI-btn">Đăng Nhập</a>
+                            <a href="#" id="SU-btn">Đăng Ký</a>
+                            <a href="#" id="logout-btn" style="display: none;">Đăng Xuất</a> <!-- Nút đăng xuất -->
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar left-->
+    <div id="sidebar">
+        <h3>Mục lục</h3>
+        <a href="#section1">1. Khi nào dùng this và these?</a>
+        <a href="#section2">2. Khi nào dùng that và those?</a>
+        <a href="#section3">3. Dùng this và that trong các cuộc đối thoại</a>
+        <a href="#section4">4. Phân biệt this, that, these, those</a>
+        <a href="#section5">5. Sử dụng this và that với thời gian</a>
+
+    </div>
+    <!-- Sidebar right -->
+    <div id="right-sidebar">
+        <h3>Beginer</h3>
+        <a href="bai1.html">Khóa Học 1</a>
+        <a href="bai2.html">Khóa Học 2</a>
+        <a href="bai3.html">Khóa Học 3</a>
+        <a href="bai4.html">Khóa Học 4</a>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div id="main-content">
+        <div class="section" id="section1">
+            <h2>Khi nào dùng this và these?</h2>
+            <p>
+                Trong tiếng Anh, <strong>this</strong> và <strong>these</strong> được dùng để chỉ người, vật hoặc sự việc đang ở gần người nói, cả về không gian và thời gian. Điều này có nghĩa là khi bạn muốn nói về thứ gì đó mà bạn có thể nhìn thấy hoặc cầm trong tay, bạn sẽ dùng <strong>this</strong> (cho danh từ số ít) hoặc <strong>these</strong> (cho danh từ số nhiều).
+            </p>
+            <p>
+                <strong>This</strong> dùng để chỉ một đối tượng duy nhất hoặc một sự việc duy nhất ở gần. Ví dụ:
+                <em>"This book is very interesting."</em> (Cuốn sách này rất thú vị.)
+            </p>
+            <p>
+                <strong>These</strong> dùng để chỉ nhiều đối tượng ở gần người nói. Ví dụ:
+                <em>"These flowers are beautiful."</em> (Những bông hoa này thật đẹp.)
+            </p>
+            <p>
+                Cả hai từ này cũng có thể dùng để chỉ thời gian. <strong>This</strong> có thể dùng để chỉ thời gian hiện tại hoặc rất gần với hiện tại, chẳng hạn như:
+                <em>"I’m going to finish this project this week."</em> (Tôi sẽ hoàn thành dự án này trong tuần này.)
+            </p>
+        </div>
+
+        <div class="section" id="section2">
+            <h2>Khi nào dùng that và those?</h2>
+            <p>
+                Ngược lại với <strong>this</strong> và <strong>these</strong>, <strong>that</strong> và <strong>those</strong> được dùng để nói về người, vật hoặc sự việc ở xa người nói, cả về mặt vật lý lẫn thời gian. Khi bạn chỉ vào thứ gì đó ở xa hoặc đang ở một khoảng cách nhất định, bạn sẽ dùng <strong>that</strong> (cho số ít) hoặc <strong>those</strong> (cho số nhiều).
+            </p>
+            <p>
+                <strong>That</strong> dùng để chỉ một đối tượng duy nhất ở xa. Ví dụ:
+                <em>"That house on the hill is beautiful."</em> (Ngôi nhà trên đồi đó thật đẹp.)
+            </p>
+            <p>
+                <strong>Those</strong> dùng để chỉ nhiều đối tượng ở xa. Ví dụ:
+                <em>"Those shoes over there look nice."</em> (Những đôi giày kia trông thật đẹp.)
+            </p>
+            <p>
+                <strong>That</strong> cũng có thể dùng để chỉ những sự kiện hoặc thời gian trong quá khứ. Ví dụ:
+                <em>"That was a great concert last night."</em> (Buổi hòa nhạc tối qua thật tuyệt vời.)
+            </p>
+        </div>
+
+        <div class="section" id="section3">
+            <h2>Dùng this và that trong các cuộc đối thoại</h2>
+            <p>
+                Trong hội thoại hàng ngày, <strong>this</strong> thường được dùng để giới thiệu ai đó, trong khi <strong>that</strong> thường dùng để hỏi về một người hay vật mà người nói muốn biết.
+            </p>
+            <p>
+                Khi giới thiệu ai đó, bạn có thể nói:
+                <em>"This is my friend, Sarah."</em> (Đây là bạn của tôi, Sarah.)
+            </p>
+            <p>
+                Khi muốn hỏi về ai đó hoặc vật nào đó ở xa, bạn có thể dùng <strong>that</strong>. Ví dụ:
+                <em>"Who is that man standing near the door?"</em> (Người đàn ông đứng gần cửa kia là ai?)
+            </p>
+            <p>
+                Hoặc khi bạn muốn nhắc lại điều gì vừa được nói hoặc làm ở quá khứ, bạn cũng dùng <strong>that</strong>:
+                <em>"That was an incredible story!"</em> (Đó là một câu chuyện tuyệt vời!)
+            </p>
+        </div>
+
+        <div class="section" id="section4">
+            <h2>Phân biệt this, that, these, those</h2>
+            <p>
+                Để dễ hiểu hơn, bạn có thể xem bảng sau để phân biệt <strong>this</strong>, <strong>that</strong>, <strong>these</strong>, <strong>those</strong> dựa trên ngữ cảnh:
+            </p>
+            <table>
+                <tr>
+                    <th>Đại từ chỉ định</th>
+                    <th>Số ít (Singular)</th>
+                    <th>Số nhiều (Plural)</th>
+                </tr>
+                <tr>
+                    <td>Chỉ định đối tượng ở khoảng cách gần</td>
+                    <td>This</td>
+                    <td>These</td>
+                </tr>
+                <tr>
+                    <td>Chỉ định đối tượng ở khoảng cách xa</td>
+                    <td>That</td>
+                    <td>Those</td>
+                </tr>
+            </table>
+            <p>
+                Khi chỉ vật ở gần, ta dùng <strong>this</strong> cho số ít và <strong>these</strong> cho số nhiều. Ngược lại, khi chỉ vật ở xa, ta dùng <strong>that</strong> cho số ít và <strong>those</strong> cho số nhiều.
+            </p>
+            <p>
+                Ví dụ:
+                <ul>
+                    <li><em>"This car is mine."</em> (Chiếc xe này là của tôi.)</li>
+                    <li><em>"These apples are fresh."</em> (Những quả táo này còn tươi.)</li>
+                    <li><em>"That mountain is tall."</em> (Ngọn núi đó rất cao.)</li>
+                    <li><em>"Those birds are flying high."</em> (Những con chim kia đang bay cao.)</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="section" id="section5">
+            <h2>Sử dụng this và that với thời gian</h2>
+            <p>
+                Một ứng dụng khác của <strong>this</strong> và <strong>that</strong> là trong việc nói về thời gian. <strong>This</strong> dùng để chỉ thời gian hiện tại hoặc rất gần. Ví dụ:
+                <em>"I’m meeting him this evening."</em> (Tôi sẽ gặp anh ấy tối nay.)
+            </p>
+            <p>
+                Trong khi đó, <strong>that</strong> dùng để chỉ thời gian trong quá khứ hoặc thời gian xa hơn. Ví dụ:
+                <em>"That summer was the best one of my life."</em> (Mùa hè đó là mùa hè tuyệt nhất trong cuộc đời tôi.)
+            </p>
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <!-- <h3>Học Tiếng Anh Online</h3> -->
+                <img src="img/logocta.jpg" alt="Thông tin" class="footer-image">
+            </div>
+            <div class="footer-address">
+                <h3 class="h3f">Thông Tin Liên Hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Thành phố XYZ</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> contact@example.com</p>
+            </div>
+            <div class="footer-social">
+                <h3 class="h3f">Mạng Xã Hội</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size:14px">&copy; Copyright © CTA ENGLISH. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="myjs.js"></script>
+</body>
+</html>

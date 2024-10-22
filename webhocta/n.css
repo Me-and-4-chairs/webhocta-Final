@@ -1,0 +1,231 @@
+﻿body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; /* Thêm dòng này nếu cần thiết */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/* Màu chữ trong header */
+header {
+    background: #93C6E7;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky; /* Thêm thuộc tính sticky */
+    top: 0; /* Đặt nó ở trên cùng */
+    z-index: 1000; /* Đảm bảo header luôn nằm trên các phần khác */
+    transition: background 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+    header.scrolled {
+        background: rgba(51, 51, 51, 0.9); /* Thay đổi màu nền khi cuộn */
+    }
+
+/* Container và nav */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    transition: transform 0.7s, color 0.7s; /* Thêm hiệu ứng chuyển động */
+}
+
+    nav ul li a {
+        color: #fff; /* Màu chữ mặc định */
+        text-decoration: none;
+        transition: color 0.7s, text-shadow 0.7s;
+        font-size: 18px; /* Kích cỡ chữ mặc định */
+    }
+
+/* Đổi màu chữ trong header khi cuộn */
+header.scrolled nav ul li a {
+    color: #FFFFFF; /* Đổi màu chữ khi cuộn */
+}
+
+/* Hover cho nav */
+nav ul li:hover {
+    transform: translateY(-3px); /* Đẩy lên một chút khi hover */
+}
+
+    nav ul li:hover a {
+        font-size: 20px; /* Kích cỡ chữ lớn hơn khi hover */
+    }
+
+/* Dropdown */
+.user-icon {
+    position: relative;
+}
+
+.icon {
+    font-size: 24px; /* Kích thước biểu tượng */
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s; /* Thêm hiệu ứng màu */
+}
+
+    .icon:hover {
+        transform: scale(1.2); /* Phóng to biểu tượng khi hover */
+        color: #e67e22; /* Đổi màu biểu tượng khi hover */
+    }
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #f1f1f1; /* Màu nền dropdown */
+    border: 1px solid #ccc;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.user-icon:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 12px 15px;
+    color: #333; /* Màu chữ mặc định trong dropdown */
+    text-decoration: none;
+    text-align: center;
+}
+
+    /* Màu chữ khi hover trong dropdown */
+    .dropdown a:hover {
+        background: #3498db; /* Màu nền khi hover vào link */
+        color: #fff; /* Màu chữ khi hover */
+    }
+
+/* Giữ nguyên màu chữ trong dropdown khi cuộn */
+header.scrolled .dropdown a {
+    color: #333; /* Giữ nguyên màu chữ trong dropdown khi cuộn */
+}
+
+.dropdown-menu {
+    display: none; /* Ẩn menu dropdown mặc định */
+    position: absolute; /* Để hiển thị menu bên dưới icon */
+    background-color: white; /* Màu nền cho menu */
+    border: 1px solid #ccc; /* Đường viền cho menu */
+    z-index: 1000; /* Đảm bảo menu nằm trên các phần tử khác */
+}
+
+
+/* Các phần còn lại của CSS giữ nguyên */
+footer {
+    background-color: #180161; /* Màu nền */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-address i:hover {
+    color: #FF3B6A; /* Màu hồng khi hover */
+}
+
+header a:hover {
+    color: #091057; /* Màu khi hover ở header */
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer-info, .footer-address, .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-image {
+    width: auto; /* Để chiều rộng tự động */
+    height: auto; /* Để chiều cao tự động */
+    max-width: 100%; /* Giới hạn chiều rộng tối đa để không vượt quá container */
+    max-height: 100%; /* Giới hạn chiều cao tối đa */
+}
+
+
+.footer-address p {
+    margin-bottom: 5px;
+    display: flex; /* Để hiển thị icon và văn bản trên cùng một dòng */
+    align-items: center; /* Căn giữa icon và văn bản */
+}
+
+.footer-address i {
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+    color: #FF6A97; /* Màu icon hồng */
+}
+
+.footer-social {
+    text-align: center; /* Căn giữa nội dung */
+}
+
+    .footer-social .social-icons {
+        display: flex;
+        justify-content: center; /* Căn giữa các icon */
+        gap: 15px; /* Khoảng cách giữa các icon */
+    }
+
+    .footer-social a {
+        color: #FF6A97; /* Màu icon hồng */
+        font-size: 24px; /* Kích thước icon */
+        transition: color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu và biến đổi */
+    }
+
+        .footer-social a:hover {
+            color: #FF3B6A; /* Màu khi hover đậm hơn */
+            transform: scale(1.1); /* Phóng to icon khi hover */
+        }
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #FFFFFF; /* Màu chữ trắng */
+}
+
+h3 {
+    color: #FFFFFF; /* Màu chữ h3 trắng */
+    font-size: 1.5rem; /* Kích thước chữ h3 lớn hơn */
+}
+
+
+.user-management {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}

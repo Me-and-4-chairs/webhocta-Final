@@ -6,30 +6,30 @@
     <title>Khóa Học</title>
     <link rel="stylesheet" href="khoaHocCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
     <header>
         <div class="container">
             <div class="containerone">
-                <img src="img/logoone.png" width="150" height="82">
+                <img src="img/logoone.png" width="150" height="82" alt="Logo">
                 <h1>CTA ENGLISH</h1>
             </div>
             <nav>
                 <ul>
-                    <li></li>
                     <li><a href="#" id="home-btn">Trang Chủ</a></li>
                     <li><a href="khoaHoc.html" id="courses-btn">Khóa Học</a></li>
                     <li><a href="#contact" id="contact-btn">Liên Hệ</a></li>
                     <li class="user-icon">
-                        <span class="icon" id="user-icon">🔑</span> <!-- Icon đăng nhập -->
+                        <span class="icon" id="user-icon">🔑</span>
                         <div class="dropdown">
                             <a href="#" id="SI-btn">Đăng Nhập</a>
                             <a href="#" id="SU-btn">Đăng Ký</a>
-                            <a href="#" id="logout-btn" style="display: none;">Đăng Xuất</a> <!-- Nút đăng xuất -->
+                            <a href="#" id="logout-btn" style="display: none;">Đăng Xuất</a>
                         </div>
                     </li>
                 </ul>
@@ -42,16 +42,24 @@
             <h2>Các Khóa Học Dành Cho Người Mới Bắt Đầu</h2>
             <div class="khoaHocs">
                 <div class="khoaHocbox beginner">
-                    <h3>Beginner 1: Ngữ Pháp Cơ Bản</h3>
+                    <a href="bai1.html" style="display: block; text-decoration: none;">
+                        <h3>Beginner 1: Ngữ Pháp Cơ Bản</h3>
+                    </a>
                 </div>
                 <div class="khoaHocbox beginner">
-                    <h3>Beginner 2: Từ Vựng Cơ Bản</h3>
+                    <a href="bai2.html" style="display: block; text-decoration: none;">
+                        <h3>Beginner 2: Cấu trúc be about to</h3>
+                    </a>
                 </div>
                 <div class="khoaHocbox beginner">
-                    <h3>Beginner 3: Kỹ Năng Nói</h3>
+                    <a href="bai3.html" style="display: block; text-decoration: none;">
+                        <h3>Beginner 3: Thì Hiện Tại Hoàn Thành</h3>
+                    </a>
                 </div>
                 <div class="khoaHocbox beginner">
-                    <h3>Beginner 4: Kỹ Năng Nghe</h3>
+                    <a href="bai4.html" style="display: block; text-decoration: none;">
+                        <h3>Beginner 4: This That These Those</h3>
+                    </a>
                 </div>
             </div>
         </section>
@@ -93,10 +101,35 @@
         </section>
     </main>
 
+    <script>
+        // Chuyển hướng khi nhấp vào phần tử có ID beginner1
+        document.getElementById('beginner1').onclick = function () {
+            window.location.href = 'bai1.html'; // Chuyển hướng đến bai1.html
+        };
+    </script>
+    <script>
+        // Chuyển hướng khi nhấp vào phần tử có ID beginner1
+        document.getElementById('beginner1').onclick = function () {
+            window.location.href = 'bai2.html'; // Chuyển hướng đến bai1.html
+        };
+    </script>
+    <script>
+        // Chuyển hướng khi nhấp vào phần tử có ID beginner1
+        document.getElementById('beginner1').onclick = function () {
+            window.location.href = 'bai3.html'; // Chuyển hướng đến bai1.html
+        };
+    </script>
+    <script>
+        // Chuyển hướng khi nhấp vào phần tử có ID beginner1
+        document.getElementById('beginner1').onclick = function () {
+            window.location.href = 'bai4.html'; // Chuyển hướng đến bai1.html
+        };
+    </script>
+
+
     <footer id="footer">
         <div class="footer-container">
             <div class="footer-info">
-                <!-- <h3>Học Tiếng Anh Online</h3> -->
                 <img src="img/logocta.jpg" alt="Thông tin" class="footer-image">
             </div>
             <div class="footer-address">

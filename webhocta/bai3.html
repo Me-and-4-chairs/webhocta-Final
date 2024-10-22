@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngữ Pháp Cơ Bản</title>
+    <link rel="stylesheet" href="baiHocStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="js/jquery-ui.min.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link href="js/jquery-ui.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="containerone">
+                <img src="img/logoone.png" width="150" height="82">
+                <h1>CTA ENGLISH</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li></li>
+                    <li><a href="#" id="home-btn">Trang Chủ</a></li>
+                    <li><a href="khoaHoc.html" id="courses-btn">Khóa Học</a></li>
+                    <li><a href="#contact" id="contact-btn">Liên Hệ</a></li>
+                    <li class="user-icon">
+                        <span class="icon" id="user-icon">🔑</span> <!-- Icon đăng nhập -->
+                        <div class="dropdown">
+                            <a href="#" id="SI-btn">Đăng Nhập</a>
+                            <a href="#" id="SU-btn">Đăng Ký</a>
+                            <a href="#" id="logout-btn" style="display: none;">Đăng Xuất</a> <!-- Nút đăng xuất -->
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar left-->
+    <div id="sidebar">
+        <h3>Mục lục</h3>
+        <a href="#section1">1. Giới thiệu</a>
+        <a href="#section2">2. Công thức</a>
+        <a href="#section3">3. Cách sử dụng</a>
+        <a href="#section4">4. Dấu hiệu nhận biết</a>
+        <a href="#section5">5. Quy tắc chia động từ</a>
+    </div>
+    <!-- Sidebar right -->
+    <div id="right-sidebar">
+        <h3>Beginer</h3>
+        <a href="bai1.html">Khóa Học 1</a>
+        <a href="bai2.html">Khóa Học 2</a>
+        <a href="bai3.html">Khóa Học 3</a>
+        <a href="bai4.html">Khóa Học 4</a>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div id="main-content">
+        <div class="section" id="section1">
+            <h2>Thì hiện tại hoàn thành (Present Perfect Tense) là gì?</h2>
+            <p>Thì hiện tại hoàn thành được sử dụng để diễn tả một hành động đã xảy ra trong quá khứ và vẫn còn ảnh hưởng đến hiện tại hoặc vừa mới hoàn thành.</p>
+            <p><strong>Ví dụ:</strong></p>
+            <ul>
+                <li>I have finished my homework. (Tôi đã làm xong bài tập về nhà.)</li>
+                <li>It has been 2 months since I first met him. (Đã 2 tháng rồi kể từ lần đầu tiên tôi gặp anh ấy.)</li>
+            </ul>
+        </div>
+
+        <div class="section" id="section2">
+            <h2>Công thức thì hiện tại hoàn thành</h2>
+            <p>Công thức thì hiện tại hoàn thành gồm 2 thành phần quan trọng là trợ động từ <strong>have/has</strong> và động từ chính ở dạng <strong>quá khứ phân từ (V3/ed)</strong>.</p>
+
+            <div class="subsection" id="khang-dinh">
+                <h3>Câu khẳng định</h3>
+                <p><strong>Công thức:</strong> S + have/has + V3/ed</p>
+                <p><strong>Ví dụ:</strong> I have seen a tiger before. (Tôi đã nhìn thấy một con hổ trước đây.)</p>
+            </div>
+
+            <div class="subsection" id="phu-dinh">
+                <h3>Câu phủ định</h3>
+                <p><strong>Công thức:</strong> S + have/has + not + V3/ed</p>
+                <p><strong>Ví dụ:</strong> He has not heard from her since last year. (Anh ấy đã không nghe tin tức về cô ấy kể từ năm ngoái.)</p>
+            </div>
+
+            <div class="subsection" id="nghi-van">
+                <h3>Câu nghi vấn Yes/No</h3>
+                <p><strong>Công thức:</strong> Have/Has + S + V3/ed?</p>
+                <p><strong>Ví dụ:</strong> Have you ever been to Disneyland? (Bạn đã đến Disneyland bao giờ chưa?)</p>
+                <p>→ Yes, I have. (Vâng, tôi đã đến rồi.)</p>
+                <p>→ No, I have not. (Chưa, tôi chưa đến.)</p>
+            </div>
+
+            <div class="subsection" id="nghi-van-wh">
+                <h3>Câu nghi vấn Wh-</h3>
+                <p><strong>Công thức:</strong> Wh- + have/has + S + V3/ed?</p>
+                <p><strong>Ví dụ:</strong> How much money have you saved for retirement? (Bạn đã tiết kiệm được bao nhiêu tiền cho hưu trí?)</p>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <h2>Thì hiện tại hoàn thành được sử dụng khi nào?</h2>
+            <ul>
+                <li>Diễn tả hành động bắt đầu ở quá khứ và đang tiếp tục ở hiện tại</li>
+                <li>Diễn tả một kinh nghiệm hoặc trải nghiệm</li>
+                <li>Diễn tả một hành động trong quá khứ nhưng ảnh hưởng đến hiện tại</li>
+                <li>Diễn tả một sự việc vừa mới xảy ra</li>
+            </ul>
+        </div>
+
+        <div class="section" id="section4">
+            <h2>Dấu hiệu nhận biết thì hiện tại hoàn thành</h2>
+            <p>Thì hiện tại hoàn thành thường được nhận biết qua một số trạng từ chỉ thời gian hoặc từ/cụm từ chỉ thời gian, ví dụ:</p>
+
+            <div class="subsection" id="trang-tu-thoi-gian">
+                <h3>Trạng từ chỉ thời gian</h3>
+                <ul>
+                    <li><strong>since + mốc thời gian</strong>: kể từ khi</li>
+                    <li><strong>for + khoảng thời gian</strong>: trong vòng</li>
+                    <li><strong>never</strong>: chưa bao giờ</li>
+                    <li><strong>already</strong>: đã rồi</li>
+                </ul>
+            </div>
+
+            <div class="subsection" id="cum-tu-thoi-gian">
+                <h3>Từ/cụm từ chỉ thời gian</h3>
+                <ul>
+                    <li><strong>so far</strong>: cho đến nay</li>
+                    <li><strong>up to now</strong>: cho tới bây giờ</li>
+                    <li><strong>the first/second/third time</strong>: lần thứ nhất/hai/ba...</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="section5">
+            <h2>Quy tắc chia động từ trong thì hiện tại hoàn thành</h2>
+
+            <div class="subsection" id="dong-tu-co-quy-tac">
+                <h3>Động từ có quy tắc</h3>
+                <p>Với các động từ có quy tắc, thêm <strong>ed</strong> vào cuối động từ.</p>
+                <ul>
+                    <li><strong>play</strong> → played</li>
+                    <li><strong>study</strong> → studied</li>
+                    <li><strong>watch</strong> → watched</li>
+                </ul>
+            </div>
+
+            <div class="subsection" id="dong-tu-bat-quy-tac">
+                <h3>Động từ bất quy tắc</h3>
+                <p>Một số động từ không tuân theo quy tắc thêm "ed" và cần tra bảng động từ bất quy tắc.</p>
+                <ul>
+                    <li><strong>be</strong> → been</li>
+                    <li><strong>go</strong> → gone</li>
+                    <li><strong>see</strong> → seen</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <!-- <h3>Học Tiếng Anh Online</h3> -->
+                <img src="img/logocta.jpg" alt="Thông tin" class="footer-image">
+            </div>
+            <div class="footer-address">
+                <h3 class="h3f">Thông Tin Liên Hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Thành phố XYZ</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> contact@example.com</p>
+            </div>
+            <div class="footer-social">
+                <h3 class="h3f">Mạng Xã Hội</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size:14px">&copy; Copyright © CTA ENGLISH. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="myjs.js"></script>
+</body>
+</html>

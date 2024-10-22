@@ -71,6 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="api.aspx" />
+    <Content Include="bai1.html" />
+    <Content Include="bai2.html" />
+    <Content Include="bai3.html" />
+    <Content Include="bai4.html" />
+    <Content Include="baiHocStyle.css" />
     <Content Include="img\dotnet-runtime-8.0.10-win-x64.exe" />
     <Content Include="img\logocta.jpg" />
     <Content Include="img\logoone.png" />
@@ -93,6 +98,7 @@
     <Content Include="khoaHocCss.css" />
     <Content Include="mycss.css" />
     <Content Include="myjs.js" />
+    <Content Include="n.css" />
     <Content Include="QuanLy.html" />
     <Content Include="signCss.css" />
     <Content Include="Signin.html" />
